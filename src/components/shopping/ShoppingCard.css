@@ -1,0 +1,49 @@
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;  /* Espacio entre productos */
+  }
+  
+  .product-item {
+    width: calc(33.33% - 16px);  /* Ajustar el ancho para 3 columnas con espacio entre ellas */
+    border: 1px solid #c3c3c3;
+    padding: 16px;
+    list-style: none;
+  }
+  
+  .highlighted {
+    border-color: violet;  /* Cambiar el color del borde para productos destacados */
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;  /* Espacio entre botones y cantidad */
+  }
+  
+  span{
+    /*border: solid 1px red;*/
+    width:30px;
+    height: 30px;
+  }
+  
+
+.shopping-cart {
+  
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.item-info {
+  
+}
+
+.item-price {
+  
+}
