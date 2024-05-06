@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 
-
 export default function ShoppingPagar({ cart, removeFromCart, calculateTotal }) {
   return (
     <div className="shopping-cart bg-gray-100 p-4 rounded-lg">

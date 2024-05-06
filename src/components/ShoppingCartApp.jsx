@@ -86,7 +86,7 @@ export default function ShoppingCartApp() {
   };
 
   return (
-    <div className="app">
+    <div className="app p-4">
       <ShoppingCard
         products={products}
         addToCart={addToCart}
