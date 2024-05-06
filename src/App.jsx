@@ -1,5 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
-import ShoppingCartApp from "./ShoppingCartApp";
+import ShoppingCartApp from "./components/ShoppingCartApp.jsx";
 
 
 function App() {
