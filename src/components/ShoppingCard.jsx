@@ -4,13 +4,13 @@ export default function ShoppingCard({ products, addToCart, updateQuantity }) {
   return (
     <div className="product-list">
       <h2 className="text-xl font-semibold mb-4">Lista de Productos</h2>
-      <ul className="grid grid-cols-3 gap-4">
+      <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {products.map((product) => (
           <li
             key={product.id}
             className="bg-white shadow rounded-lg overflow-hidden"
           >
-            <div className="w-54 h-48 flex items-center justify-center">
+            <div className="w-54 h-48 md:w-full md:h-auto flex items-center justify-center">
               <img
                 src={product.image_url}
                 alt={product.name}
