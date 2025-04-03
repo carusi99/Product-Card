@@ -5,6 +5,11 @@ export default function ShoppingPagar({
   removeFromCart,
   calculateTotal,
 }) {
+  const totalPrice = (price, quantity) => {
+    const total = price * quantity;
+    const formattedTotal = total.toFixed(2);
+    return `${formattedTotal}`;
+  }
   return (
     <div className="shopping-cart bg-gray-100 p-4 rounded-lg">
       <h2 className="text-xl font-semibold mb-4">Carrito de Compras</h2>
@@ -25,7 +30,7 @@ export default function ShoppingPagar({
               </div>
               <div className="flex items-center">
                 <p className="text-gray-700 mr-4">
-                  ${product.price * product.quantity}
+                  {totalPrice(product.price, product.quantity)}
                 </p>
                 <button
                   className="text-red-500 hover:text-red-700"

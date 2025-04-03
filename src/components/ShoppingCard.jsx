@@ -2,7 +2,7 @@
 
 export default function ShoppingCard({ products, addToCart, updateQuantity }) {
   return (
-    <div className="product-list">
+    <div className="product-list col-span-2">
       <h2 className="text-xl font-semibold mb-4">Lista de Productos</h2>
       <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {products.map((product) => (
